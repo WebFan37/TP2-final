@@ -59,6 +59,7 @@ nav a {
 #tableau {
   display: flex;
   flex-direction: column;
+  background-color: rgb(255, 169, 169);
 }
 
 /* /////////////////////// */

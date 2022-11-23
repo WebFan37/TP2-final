@@ -1,0 +1,9 @@
+.mon_tableau {
+  border-collapse: collapse;
+  border: 2px solid rgb(170, 170, 170);
+}
+.mon_tableau td,
+.mon_tableau th {
+  border: 2px solid rgb(165, 0, 115);
+  padding: 4px;
+}
