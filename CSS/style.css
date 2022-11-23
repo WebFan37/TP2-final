@@ -56,5 +56,9 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
 }
+#tableau {
+  display: flex;
+  flex-direction: column;
+}
 
 /* /////////////////////// */
