@@ -6,4 +6,4 @@
 
 date de remise: le dernier jour de la semaine 15
 
-github-page : https://webfan37.github.io/1W1/
+github-page : https://webfan37.github.io/TP2-final/
