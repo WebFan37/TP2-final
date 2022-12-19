@@ -1,0 +1,27 @@
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.formulaire label {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+/*ne s'applique que sur <input type="text">*/
+.formulaire label,
+.formulaire input [text] {
+  width: 200px, 0;
+  padding: 10px, 0;
+}
+/*ne s'applique que sur <input type="checkbox">*/
+.formulaire input [checkbox] {
+  padding: 6px;
+}
+.langue label {
+  padding: 7px;
+  margin: 10px 0;
+}
+.langue {
+  padding: 7px 0;
+}

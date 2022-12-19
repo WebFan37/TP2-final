@@ -1,0 +1,23 @@
+/* -------- SECTION ACCUEIL ----*/
+#accueil {
+  background-color: rgb(255, 200, 206);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+#accueil h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px grey;
+}
+#accueil h2 {
+  font-size: 3.5rem;
+  text-shadow: 4px 4px 7px rgb(255, 0, 0);
+  font-family: "Roboto", sans-serif;
+}
+#accueil h4 {
+  font-family: "Roboto", sans-serif;
+}
+#accueil p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

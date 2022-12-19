@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/tableau.css" />
+    <link rel="stylesheet" href="CSS/video.css" />
+    <link rel="stylesheet" href="CSS/formulaire.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/accueil.css" />
   </head>
   <body>
-    <nav>
+    <!-- ////////////// Endroit pour cliquer (menu)//////-->
+    <input type="checkbox" id="chk-burger" />
+    <label for="chk-burger" class="burger">
+      <img
+        src="https://s2.svgbox.net/materialui.svg?ic=play_arrow&color=000"
+        width="32"
+        height="32"
+      />
+    </label>
+    <!-- ////////////// Liste Menu//////-->
+    <nav class="menu">
       <a href="#accueil">Accueil</a>
       <a href="#inscription">Inscription</a>
       <a href="#galerie">Galerie </a>
@@ -19,65 +38,235 @@
       <a href="#video">Vidéo </a>
       <a href="#footer">Footer </a>
     </nav>
+    <!-- ////////////// Section Accueil //////-->
     <section id="accueil">
-      <h1>TP2</h1>
+      <h1>Travail Pratique 2</h1>
       <h2>Exhibition de photo</h2>
       <h3>Autrice: Janne Zhang Ellison</h3>
+      <a href="https://github.com/WebFan37/1W1">Github page</a>
+      <a href="">Ma Github</a>
+
+      <h4>
+        C'est un exhbition de photo durant mon parcours de la photographie et
+        vidéographie. Les éléments ci-dessous sont mes hightlights. Venez
+        participer à mes concours de photographie et vidéographie !
+      </h4>
+
       <p>
         1W1-Mise en page web - Techniques d'intégration multimédia - Collège de
-        Maisonneuve
+        Maisonneuve - Automne 2022
       </p>
     </section>
-
+    <!-- ////////////// Section Inscription //////-->
     <section id="inscription">
       <h1>Inscription</h1>
+      <form class="formulaire">
+        <label for="txt_prenom">Votre prénom</label>
+        <input type="text" id="txt-prenom" />
+        <label for="txt_nom">Votre nom</label>
+        <input type="text" name="txt-nom" id="txt-nom" />
+        <label for="txt_email">Votre email</label>
+        <input type="text" name="txt-email" id="txt-email" />
+        <label for="txt_motdepasse">Mot de passe</label>
+        <input type="text" id="txt-mot-de-passe" />
+        
+        <div class="langue">
+          <h4>Identification</h4>
+          <label for="chk-html"
+            >Vous êtes un étudiant
+            <input type="checkbox" id="chk-html" />
+          </label>
+          <label for="chk-css"
+            >Vous êtes au moins 10 ans
+            <input type="checkbox" id="chk-css" />
+          </label>
+          
+        </div>
+        <input type="button" onclick="alert('Bienvenue !')">Inscrire</button>
+      </form>
     </section>
-
+    <!-- ////////////// Section Galerie //////-->
     <section id="galerie">
       <h1>Galerie</h1>
+
+      <section class="pictures">
+        <figure>
+          <img
+            src="images/Apple Ecosystem.jpg"
+            alt="iphone and ipad and mac"
+            width="300"
+            height="225"
+          />
+          <figcaption>Apple iPhone, iPad & MacBook</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/Galaxy Watch 4.jpg"
+            alt="Samsung smartwatch"
+            width="250"
+            height="187"
+          />
+          <figcaption>Galaxy Watch 4</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/Montreal wheel.jpeg"
+            alt="Montreal attraction wheel"
+            width="300"
+            height="225"
+          />
+          <figcaption>Grande roue de Montréal</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/Montreal centre ville.jpg"
+            alt="Downtown Montreal"
+            width="232"
+            height="300"
+          />
+          <figcaption>Centre Ville de Montréal</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/railway.jpg" alt="Railway"
+          width="400"
+          height="auto"/>
+          <figcaption>Station de train</figcaption>
+        </figure>
+      </section>
     </section>
+    <!-- ////////////// Section Tableau //////-->
     <section id="tableau">
-      <h1>Tableau</h1>
+      <h1>Tableau sur frais d'inscription</h1>
       <!--table>(tr>(td>lorem2)*3)*4-->
       <table class="mon_tableau">
         <tr>
-          <th>Lorem, ipsum.</th>
-          <th>Obcaecati, dicta.</th>
-          <th>Autem, quas.</th>
+          <th></th>
+          <th>Enfants 2 à 10 ans</th>
+          <th>Enfants 10 à 18 ans</th>
+          <th>Adultes 18 à 60 ans</th>
+          <th>Âgé 60 à 80 ans</th>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Id, dolor?</td>
-          <td>Magnam, assumenda!</td>
+          <td>Prix régulier</td>
+          <td>3$</td>
+          <td>10$</td>
+          <td>15$</td>
+          <td>8$</td>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Deserunt, exercitationem!</td>
-          <td>Eveniet, deserunt.</td>
+          <td>Prix Weekend</td>
+          <td>gratuit</td>
+          <td>8$</td>
+          <td>12$</td>
+          <td>5$</td>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Perferendis, ad!</td>
-          <td>Culpa, est?</td>
+          <td>Prix Vacance</td>
+          <td>gratuit</td>
+          <td>8$</td>
+          <td>10$</td>
+          <td>gratuit</td>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Illo, tempora!</td>
-          <td>Est, id.</td>
+          <td>Prix spécial</td>
+          <td>gratuit</td>
+          <td>5$</td>
+          <td>8$</td>
+          <td>gratuit</td>
         </tr>
       </table>
     </section>
-
+    <!-- ////////////// Section Evenements //////-->
     <section id="evenements">
-      <h1>Événements</h1>
+      <h1>Événement et Article</h1>
+      <h2>Notre évenement de l'année</h2>
+      <h3>Exhibition photo (Tous les 25 Décembre)</h3>
+      <p>
+        Évenement incroyable avec toutes les photos de l'année. Inscription
+        requise. Nourriture de la soirée sera fournis dans le prix d'inscription
+        ! Soyez les bienvenus
+      </p>
+      <img
+        src="images/Coucher du soleil.jpg"
+        alt="Sunset"
+        width="500"
+        height="375"
+      />
     </section>
-
+    <!-- //////////////Section Video //////-->
     <section id="video">
-      <h1>Vidéo</h1>
+      <h1>Vidéo mon compte YouTube</h1>
+      <div class="youtube">
+        <iframe
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/3E1lcO-Ju3Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/acTsjyqeIX8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
+    <!-- ////////////// Section footer//////-->
 
     <section id="footer">
-      <h1>Pieds de page</h1>
+      <dl>
+        <dt>Notre collège</dt>
+        <dd>3800 Sherbrooke Est</dd>
+        <dd>Montreal QC</dd>
+        <dd>H1X 2A2</dd>
+      </dl>
+      <dl>
+        <dt>Département Technique Intégration multimédia</dt>
+        <dd>Un des meilleurs techniques</dd>
+        <dd>pour les étudiants qui ont un intérêt dans</dd>
+        <dd>la technologie et la photoshop. Vous apprenez</dd>
+        <dd>la création vidéo, le design du Web, la création de jeux vidéo</dd>
+        <dd>et le traitement d'image ! Ça vaut la peine !</dd>
+      </dl>
+      <dl>
+        <dt>Les liens importants</dt>
+        <dd>
+          <a href="https://www.cmaisonneuve.qc.ca/"
+            >LIEN COLLÈGE DE MAISONNEUVE</a
+          >
+        </dd>
+        <dd>
+          <a href="https://www.cmaisonneuve.qc.ca/accueil/calendrier-scolaire/">LIEN CALENDRIER SCOLAIRE</a>
+        </dd>
+        <dd>
+          <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">LIEN DÉPARTEMENT TIM</a>
+        </dd>
+      </dl>
+    
     </section>
+
+   <div class="fin">
+          Avis de confidentialité | Privacy Noticy
+        </div>
+        
+        <div class="svgbox">
+          <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=ffffff" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=ffffff" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=ffffff" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=ffffff" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=googleplay&color=ffffff" width="32" height="32">
+          <img src="https://s2.svgbox.net/social.svg?ic=apple&color=ffffff" width="32" height="32">
+        </div>
+        
   </body>
 </html>
